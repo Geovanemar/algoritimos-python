@@ -1,0 +1,6 @@
+lista = ["a" , "b" , "c" , "d" , "f" ,]
+print(lista[1:3])
+print(lista[:4])
+print(lista[3:])
+print(lista[:])
+print(lista[0:6])
