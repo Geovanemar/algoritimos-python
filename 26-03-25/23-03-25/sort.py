@@ -1,3 +1,3 @@
 lista = [88, 82, 83,84]
-lista.sort()
+lista.sort() #coloca o maior numero no final
 print(lista)
