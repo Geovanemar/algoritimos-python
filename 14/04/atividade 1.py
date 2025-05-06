@@ -3,7 +3,7 @@ nota2 = float(input("Digite a primeira nota: "))
 
 media = (nota1 + nota2)/2
 
-if media >= 7 and media <= 9.9:
+if media >= 7 and media < 10:
     print("Aprovado!!!")
 
 elif media <= 6:

@@ -4,4 +4,5 @@ if idade >= 18:
     print("Maior idade")
 else:
     print("Maoir de idade")    
+
    
