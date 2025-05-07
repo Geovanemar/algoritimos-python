@@ -47,7 +47,7 @@ while True:
              clientes.append(num_conta)
              break
     while True:         
-        sal_inicial = (input("informe o seu saldo inicial: "))
+        sal_inicial = float(input("informe o seu saldo inicial: "))
         if sal_inicial < 0:
              print("NÃO É POSSIVEL REALIZAR O CADASTRO ")
         else:
@@ -57,19 +57,28 @@ while True:
     while True:
         print(" CADASTRO REALIZADO!!! ")
 
-        lista_bamco = input("1 = Ver Saldo , 2 = Depositar , 3 = Sacar , 4 Sair" )
+        lista_bamco = input("1 = Ver Saldo , 2 = Deposito , 3 = Sacar , 4 Sair: " )
+
+        print("CADASTRO REALIZADO!!", "\nNOME: ", clientes[0], "\nCPF: " , clientes[1], "\nRG: ", clientes[2] , "\nTEL: " , clientes[3], "\nNumero da agencia: ", clientes[4], "\nNumero da conta: ", clientes[5], "\nSalario Inicial: ", clientes[6] )
 
         if lista_bamco == "1":
              print("Saldo", clientes[6])
 
         if lista_bamco == "2":
-             print("Deposito: ", clientes[6])
+          Deposito = float(input("valor do deposito: "))
+          clientes[6] = clientes[6] + Deposito
 
         if lista_bamco == "3":
-             print("Sacar", clientes[6])
+          sacar = float(input("Valor do saque: "))
+          if sacar > clientes[6]:
+               print("valor acima do que existe")
+          else:
+               clientes[6] = clientes[6] - sacar     
 
         if lista_bamco == "4":
-             print("Sair", clientes[6] )          
+             print("Sair", clientes[6] )  
+
+             break        
 
 
    
