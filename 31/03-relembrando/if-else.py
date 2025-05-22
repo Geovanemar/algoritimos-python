@@ -8,3 +8,5 @@ else:
     print("não pode tirar a carteira!!!")
     
 
+#if = se e else = senao
+
