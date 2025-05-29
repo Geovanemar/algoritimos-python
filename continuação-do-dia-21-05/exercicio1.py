@@ -5,14 +5,7 @@ cadastro_avião = []
 cadastro_tripulação = []
 while True:
     
-    print("====== MENU PRINCIPAL ======")
-    print("1 - Cadastrar Cliente")
-    print("2 - Cadastrar Passagem")
-    print("3 - Cadastrar Avião")
-    print("4 - Cadastrar Tripulação")
-    print("5 - Gerar Relatório")
-    print("0 - Sair")
-
+   
     
     while True:
     

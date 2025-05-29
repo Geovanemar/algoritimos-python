@@ -167,11 +167,13 @@ traducao = {
 }
    
 while True:
+   print("---------------------DICIONARIO TREM BALA -----------------------")
 
-    palavra = input("Qual palavra quer saber a tradução: ")
+   
+   palavra = input("Qual palavra quer saber a tradução: ")
    
 
-    if palavra in traducao:
-      print(traducao [palavra])
-    else:
+   if palavra in traducao:
+       print(traducao [palavra])
+   else:
       print("ERRO!!!, PALAVRA NÃO ENCONTRADA")   

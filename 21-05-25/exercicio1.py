@@ -61,11 +61,27 @@ while True:
             break     
 
     break
-while True:
-    print("======CADASTRO DA PASSAGEM======")
 
-    input("Informe seu destino:")
-    input("Informe destino de origem:")
+print("======CADASTRO DA PASSAGEM======")
+
+while True:
+    cadastro_passagem = []
+
+    while True:
+        destino = input("Informe seu destino: ")
+        if destino.isdigit():
+             print("INVALIDO")
+        else:
+             cadastro_passagem(destino)
+             break
+
+    while True:         
+        destino_do_voo = input("Informe seu destino: ")
+        if destino_do_voo.isdigit():
+             print("INVALIDO")
+        else:
+             cadastro_passagem(destino_do_voo)
+             break
     input("Duração do voo:")
     input("valor da passagem:")
     input("desconto de (5%):")

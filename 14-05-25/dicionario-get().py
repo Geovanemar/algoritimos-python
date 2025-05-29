@@ -4,4 +4,4 @@ dados = {"crossfox": {"Km": 35000, "ano": 2005},
           "Jetta": {"kM": 5000, "ANO": 2011}, 
           "passat": {"Km": 62000, "ano": 1999}}
 
-print(dados.get("Jetta", "Veiculo não encontrado"))
+print(dados.get("Gol", "Veiculo não encontrado"))
