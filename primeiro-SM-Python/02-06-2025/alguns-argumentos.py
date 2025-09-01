@@ -1,4 +1,5 @@
-def hello(nome, idade):
-    print("olá", nome, "\nSua Idade é:", idade)
+##   print("olá", nome, "\nSua Idade é:", idade)
 
-hello("Yudi", 17)    
+#hello("Yudi", 17)    
+
+
