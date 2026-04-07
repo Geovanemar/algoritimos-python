@@ -1,0 +1,77 @@
+/* RESET E BOX MODEL */
+*{
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+/* NAV */
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav li{
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+main{
+    width: 80%;
+    margin: auto;
+}
+
+/* SECTIONS */
+section{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+/* FORM */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button{
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+}
+
+/* FOOTER */
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid black;
+}
