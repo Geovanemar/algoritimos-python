@@ -1,0 +1,6 @@
+idade = int(input("Digite a sua idade: "))
+
+if idade > 18 or idade == 65:
+    print("essa pessoa é adulta ")
+else:
+    print("essa idade não condiz")

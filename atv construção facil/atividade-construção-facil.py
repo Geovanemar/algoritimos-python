@@ -56,14 +56,14 @@ def registrar_venda():
     print("\n--- Registrar Venda ---")
     cliente_nome = input("Nome do cliente (ou deixe em branco se não cadastrado): ")
     vendedor_nome = input("Nome do vendedor: ")
-    data = input("Data da venda (dd/mm/aaaa): ")
+    data = input("Data da venda : ")
     itens = []
     total_venda = 0.0
     while True:
         cod_produto = input("Código do produto (ou 'fim' para encerrar): ")
         if cod_produto.lower() == "fim":
             break
-        produto = next((p for p in produtos if p["codigo"] == cod_produto), None)
+        produto = next((p for p in produtos if ["codigo"] == cod_produto), None)
         if not produto:
             print("Produto não encontrado.")
             continue
@@ -89,7 +89,7 @@ def registrar_venda():
     else:
         comissao = total_venda * 0.03
     vendas.append({
-        "cliente": cliente_nome or "Não cadastrado",
+        "cliente": cliente_nome  "Não cadastrado",
         "vendedor": vendedor_nome,
         "data": data,
         "itens": itens,
