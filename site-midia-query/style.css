@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #f5f5f5;
+    background-color: #0f1923;
+}
+
+header {
+    background-color: #111;
+    color: #ff4655;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ff4655;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #ff4655;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #ff4655;
+    transform: translateY(-2px);
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    background: linear-gradient(rgba(15, 25, 35, 0.6), rgba(15, 25, 35, 0.8)), url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #ff4655;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #ece8e1;
+}
+
+.btn-acao {
+    background-color: #ff4655;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(255, 70, 85, 0.4);
+}
+
+.btn-acao:hover {
+    background-color: #ece8e1;
+    color: #0f1923;
+    transform: scale(1.05);
+}
+
+.secao-agentes {
+    padding: 80px 40px;
+    background-color: #ece8e1;
+    color: #0f1923;
+}
+
+.secao-agentes h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    color: #0f1923;
+}
+
+.grid-agentes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-agente {
+    background-color: #0f1923;
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-agente:hover {
+    transform: translateY(-10px);
+}
+
+.card-agente img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.info-agente {
+    padding: 30px;
+}
+
+.info-agente h3 {
+    color: #ff4655;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.secao-mapas {
+    padding: 80px 40px;
+    background-color: #0f1923;
+}
+
+.secao-mapas h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #ff4655;
+}
+
+.conteudo-mapas {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.conteudo-mapas img {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.texto-mapas {
+    flex: 1;
+}
+
+.texto-mapas p {
+    font-size: 1.3em;
+    color: #ece8e1;
+}
+
+aside {
+    background-color: #111;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-top: 1px solid #333;
+}
+
+.widget {
+    flex: 1;
+}
+
+.widget h3 {
+    color: #ff4655;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border-left: 4px solid #ff4655;
+    padding-left: 15px;
+}
+
+.widget ul {
+    list-style: none;
+}
+
+.widget li {
+    margin-bottom: 10px;
+    color: #ece8e1;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.widget li:hover {
+    color: #ff4655;
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #333;
+    padding: 8px 15px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.redes a:hover {
+    background-color: #ff4655;
+}
+
+.secao-contato {
+    padding: 80px 40px;
+    background-color: #ff4655;
+}
+
+.contato-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.secao-contato h2 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form textarea {
+    padding: 15px;
+    border: none;
+    background-color: #ece8e1;
+    font-size: 1em;
+    border-radius: 2px;
+}
+
+form button {
+    background-color: #0f1923;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #111;
+}
+
+footer {
+    background-color: #000;
+    color: #666;
+    padding: 40px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-mapas {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudo-mapas img {
+        max-width: 100%;
+    }
+
+    aside {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .widget h3 {
+        border-left: none;
+        border-bottom: 2px solid #ff4655;
+        padding-left: 0;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+
+    .grid-agentes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-agente {
+        max-width: 100%;
+    }
+
+    .redes {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    .secao-agentes, .secao-mapas, .secao-contato {
+        padding: 40px 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        font-size: 0.8em;
+    }
+}
