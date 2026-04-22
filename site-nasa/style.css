@@ -1,0 +1,59 @@
+body {
+    font-family: Arial;
+    background: #0b0f1a;
+    color: white;
+}
+ 
+ 
+.topo {
+    background: black;
+    padding: 15px;
+}
+ 
+.esq {
+    display: inline-block;
+}
+ 
+.logo {
+    display: inline-block;
+    margin-left: 150px;
+    font-weight: bold;
+    font-size: 18px;
+}
+ 
+.dir {
+    float: right;
+}
+ 
+.dir a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+ 
+ 
+.azul {
+    background: #2c4ea2;
+    text-align: center;
+    padding: 20px;
+}
+ 
+ 
+.secao {
+    margin: 40px;
+    padding: 20px;
+    border-top: 1px solid #444;
+}
+ 
+ 
+.live {
+    background: red;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+ 
+.secao img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
