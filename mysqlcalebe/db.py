@@ -1,4 +1,17 @@
 import mysql.connector
+
+def conectar():
+
+    conexao = mysql.connector.connect(
+        host="127.0.0.1",
+        user="root",
+        password="",
+        database="aula connect"
+    )
+
+    return conexao
+
+import mysql.connector
 from db import conectar
  
 from flask import Flask, request, jsonify
